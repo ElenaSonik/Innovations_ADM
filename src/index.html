@@ -8,24 +8,105 @@
 <body>
 	<header class="header">
 		<div class="navbar">
-			<div class="caption">
-				<h1 class="navbar__logo">Innovations<span class="logo-tile">Adm</span></h1>
+			<h1 class="navbar__logo">Innovations<span class="logo-tile">Adm</span></h1>
+			<div class="list">
 				<div class="icon icon-burger"><span class="fa-solid fa-bars"></span></div>
-			</div>	
-			<div class="menu">
-				<div class="items">
-					<a href="#" class="icon"><span class="fa-solid fa-table-cells-large"></span></a>
-					<a href="#" class="icon icon-group"><span class="fa-solid fa-user-group"></span></a>
-					<a href="#" class="icon icon-friend"><span class="fa-solid fa-user"></span></a>
-				</div>
-				<div class="user">
-					<div class="user-img" style="background-image:url(../src/assets/default-user-image.png)">
-						<img src="../src/assets/default-user-image.png" alt="user">
+				<div class="headmenu">
+					<div class="list-icons">
+						<a href="#" class="icon"><span class="fa-solid fa-table-cells-large"></span></a>
+						<a href="#" class="icon icon-group"><span class="fa-solid fa-user-group"></span></a>
+						<a href="#" class="icon icon-friend"><span class="fa-solid fa-user"></span></a>
+					</div>
+					<div class="user">
+						<div class="user-img" style="background-image:url(../src/assets/default-user-image.png)">
+							<img src="../src/assets/default-user-image.png" alt="user">
 						</div>
-					<p class="user-name">Administrator</p>
+						<p class="user-name">Administrator</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</header>
+	<div class="container">
+		<div class="container-menu">
+			<div class="user">
+				<div class="user-img user-img_big" style="background-image:url(../src/assets/default-user-image.png)">
+					<img src="../src/assets/default-user-image.png" alt="user">
+				</div>
+				<div class="user-text">
+					<p class="user-name">Administrator</p>
+					<p class="user-status">Online</p>
+				</div>	
+			</div>
+			<div class="subtitle">Main navigation</div>
+			<div class="list main-list">
+				<a href="#" class="item"><span class="fa-solid fa-user"></span><span class="item-text">Admins</span></a>
+				<a href="#" class="item"><span class="fa-solid fa-user-group"></span><span class="item-text">Users</span></a>
+				<a href="#" class="item"><span class="fa-solid fa-table-cells-large"></span><span class="item-text">Cards</span></a>
+				<a href="#" class="item"><span class="fa-solid fa-list-ul"></span><span class="item-text">Categories</span></a>
+			</div>
+		</div>
+		<div class="container-form">
+			<div class="profile">
+				<h2 class="profile-subtitle">Profile</h2>
+				<div class="separator"></div>
+				<div class="folder">
+					<span class="fa-solid fa-user"></span><span class="item-text">Admin <span class="sign">></span>Profile</span>
+				</div>
+			</div>
+			<div class="row">
+				<form class="form">
+					<div class="form-block">
+						<h3 class="title">Edit username</h3>
+						<label for="new-username" class="var-icon"><span class="form__subtitle">New username</span></label>
+						<input class="form__input" id="new-username" type="text" placeholder="Username">
+						<label for="password" class="var-icon"><span class="form__subtitle">Password</span></label>
+						<input class="form__input" id="password" type="password" placeholder="Password">
+						<div class="border"></div>
+						<input type="submit" value="Submit" class="btn">
+					</div>
+				</form>
+				<form class="form">
+					<div class="form-block">
+						<h3 class="title">Edit email</h3>
+						<label for="email"><span class="form__subtitle">New Email</span></label>
+						<input class="form__input" id="email" type="email" placeholder="Email">
+						<label for="passw" class="password-icon"><span class="form__subtitle">Password</span></label>
+						<input class="form__input" id="passw" type="password" placeholder="Password">
+						<div class="border"></div>
+						<input type="submit" value="Submit" class="btn">
+					</div>
+				</form>
+			</div>
+			<div class="row">
+				<form class="form">
+					<div class="form-block">
+						<h3 class="title">Edit Password</h3>
+						<label for="username" class="var-icon"><span class="form__subtitle">Old password</span></label>
+						<input class="form__input" id="username" type="password" placeholder="Password">
+						<label for="new-password" class="password-icon"><span class="form__subtitle">New password</span></label>
+						<input class="form__input" id="new-password" type="password" placeholder="Password">
+						<label for="conf-password" class="password-icon"><span class="form__subtitle">Confirm password</span></label>
+						<input class="form__input" id="conf-password" type="password" placeholder="Password">
+						<div class="border"></div>
+						<input type="submit" value="Submit" class="btn">
+					</div>
+				</form>
+				<form class="form">
+					<div class="form-block">
+						<h3 class="title">Edit Image</h3>
+						<label class="btn btn-img" for="img">Please open the image</label>
+						<input type="file" id="img" hidden>
+						<div class="border"></div>
+						<input type="submit" value="Submit" class="btn">
+					</div>
+				</form>
+			</div>
+			<div class="bottom">
+				<p class="bottom-text">Develop by <a href="#" class="bottom-link">onCreate Studio</a> 2015.</p>
+				<p class="bottom-text">Version <span class="version">1.0</span></p>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
