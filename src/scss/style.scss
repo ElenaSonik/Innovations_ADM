@@ -15,18 +15,6 @@ html, body{
     width: 100%;
 }
 
-.c{
-    max-width: 1800px;
-    margin: auto;
-    box-sizing: border-box;
-    @media (max-width: 1920px){
-        max-width: 1200px;
-    }
-    @media (max-width: 1280px){
-        max-width: 740px;
-    }
-}
-
 .navbar{
     display: flex;
     align-items: center;
@@ -91,8 +79,7 @@ html, body{
     color: #fff;
     margin: 0 20px;
     position: relative;
-    &::after{
-        content: "348";
+    &-value{
         position: absolute;
         top: 20px;
         left: 10px;
@@ -107,23 +94,18 @@ html, body{
         @media(max-width:600px){
             top: 10px;
         }
+        &-group{
+            width: 11px;
+            background-color: #d5740d;
+        }
+        &-friend{
+            background-color: #b12323;
+        }
     }
     &-burger{
         @media(max-width:600px){
             padding-left: 10px;
         }
-    }
-    &-burger::after{
-        display: none;
-    }
-    &-group::after{
-        content: "3";
-        width: 11px;
-        background-color: #d5740d;
-    }
-    &-friend::after{
-        content: "127";
-        background-color: #b12323;
     }
 }
 
@@ -181,6 +163,7 @@ html, body{
 }
 
 .container-menu{
+    min-height: 100vh;
     width: 270px;
     box-sizing: border-box;
     background-color: #212226;
@@ -254,6 +237,7 @@ html, body{
 }
 
 .container-form{
+    min-height: 100vh;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -341,20 +325,6 @@ html, body{
     border-radius: 2px;
     box-sizing:border-box;
 }
-.var-icon::after{
-    content: "2";
-    position: absolute;
-    width: 10px;
-    height: 12px;
-    background-color: #7d7d7d;
-    color: #fff;
-    bottom: -38px;
-    right: 0px;
-    text-align: center;
-    border-radius: 2px;
-    box-sizing:border-box;
-    font-size: 10px;
-}
 
 .form-block{
     display: flex;
@@ -410,13 +380,13 @@ html, body{
 }
 
 .bottom{
+    position: relative;
+    bottom: 0;
     display: inline-flex;
     justify-content: space-between;
-    margin-top: 40px;
     padding: 25px;
     background-color: #fff;
     @media(max-width:960px){
-        margin-top: 15px;
         font-size: 14px;
     }
     @media(max-width:400px){
